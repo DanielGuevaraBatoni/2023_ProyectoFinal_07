@@ -1,0 +1,153 @@
+/* Importacion de letra titulo font awesome */
+/* https://fonts.google.com/specimen/Oswald?preview.text=TrailerMania&preview.text_type=custom */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #694949;
+}
+
+#header {
+    background-color: #362525;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4%;
+}
+
+#title {
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    margin: 0;
+    font-size: 42px;
+    color: #696969;
+}
+
+.carrousel,
+.carrousel * {
+    box-sizing: border-box;
+}
+
+.underTittle {
+    margin-top: 70px;
+    max-width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.carrousel {
+    font-size: 1rem;
+    height: 80vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-rows: max-content 1fr max-content;
+    grid-template-areas:
+        ". . f"
+        "l . r"
+        "p b c";
+    border-radius: 0.25rem;
+    color: white;
+}
+
+.carrousel:focus {
+    outline: 1px solid currentcolor;
+}
+
+.carrousel .slides {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    display: flex;
+    flex-grow: grow;
+    height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.carrousel .slides img {
+    --backgroundOverlay: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    background: #1d1e22;
+    transition: margin-left 2s ease;
+    background-size: cover;
+    background-position: center center;
+}
+
+.underC {
+    width: 100%;
+}
+
+.underC h2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 36px;
+    color: #1D1D1D;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.box {
+    width: calc(33.33% - 40px);
+    height: fit-content;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #362525;
+    color: #CF8F8F !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box.first {
+    margin-left: 30px;
+}
+
+.box.last {
+    margin-right: 30px;
+}
+
+.box img {
+    padding-top: 10px;
+    max-width: -webkit-fill-available;
+    height: 250px;
+    background-size: cover;
+}
+
+.box p {
+    font-size: 14px;
+    text-align: left;
+    overflow: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.box h4 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #CF8F8F;
+}
