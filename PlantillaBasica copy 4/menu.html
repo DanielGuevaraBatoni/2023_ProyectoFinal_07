@@ -5,37 +5,31 @@
   <meta charset="UTF-8">
   <title>TrailerMania</title>
   <link rel="stylesheet" type="text/css" href="css/menu.css">
-  <!--Letra titulo descargada de Font Awesome-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
 
 <body>
-  <header>
-    <div id="header">
-        <a href="login.html">
-            <h1 id="title">
-                TrailerMania
-            </h1>
-        </a>
+  <div id="header">
+    <div class="header-title">
+      <a href="#">
+        <h1>TrailerMania</h1>
+      </a>
     </div>
-    <div class="buscador">
-
-    </div>
-</header>
-
-  <div class="underTittle">
-    <div class="carrousel">
-      <div class="slides">
-        <img src="img/megalodon2.jpg" alt="">
-        <img src="img/CapPhip.jpg" alt="">
-        <img src="img/el_padrino.jpg" alt="">
-        <img src="img/pele.jpg" alt="">
-        <img src="img/garra.png" alt="">
-        <img src="img/jumanji.jpg" alt="">
-        <img src="img/interstellar.jpg" alt="">
+    <div class="header-controls">
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar" class="search-input">
+        <button type="submit" class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="user-icon">
+        <i class="fa-solid fa-user" style="color: #696969;"></i>
+        <div class="dropdown-content">
+          <a href="login.html">Cerrar sesión</a>
+        </div>
       </div>
     </div>
   </div>
@@ -46,89 +40,101 @@
 
   <div class="container">
     <div class="box first">
-      <a href="">
+      <a href="pelicula.html?peliculaId=megalodon2" onclick="mostrarTrailer('megalodon2')">
         <h4>Megalodon 2</h4>
         <img src="img/megalodon2.jpg" alt="Imagen">
       </a>
     </div>
     <div class="box">
-      <a href="index.html">
+      <a href="pelicula.html?peliculaId=el_padrino1" onclick="mostrarTrailer('el_padrino1')">
         <h4>El Padrino 1</h4>
         <img src="img/el_padrino.jpg" alt="Imagen">
       </a>
     </div>
     <div class="box last">
-      <a href="">
+      <a href="pelicula.html?peliculaId=garra" onclick="mostrarTrailer('garra')">
         <h4>Garra</h4>
         <img src="img/garra.png" alt="Imagen">
       </a>
     </div>
-  </div>
 
-  <div class="container">
     <div class="box first">
-      <a href="">
-        <h4>Megalodon 2</h4>
-        <img src="img/megalodon2.jpg" alt="Imagen">
+      <a href="pelicula.html?peliculaId=8apellidos" onclick="mostrarTrailer('8apellidos')">
+        <h4>8 Apellidos Vascos</h4>
+        <img src="img/8apellidos.jpg" alt="Imagen">
       </a>
     </div>
     <div class="box">
-      <a href="index.html">
-        <h4>El Padrino 1</h4>
-        <img src="img/el_padrino.jpg" alt="Imagen">
+      <a href="pelicula.html?peliculaId=avatar" onclick="mostrarTrailer('avatar')">
+        <h4>Avatar</h4>
+        <img src="img/avatar.jpeg" alt="Imagen">
       </a>
     </div>
     <div class="box last">
-      <a href="">
-        <h4>Garra</h4>
-        <img src="img/garra.png" alt="Imagen">
+      <a href="pelicula.html?peliculaId=CapPhip" onclick="mostrarTrailer('CapPhip')">
+        <h4>Captain Phillips</h4>
+        <img src="img/CapPhip.jpg" alt="Imagen">
       </a>
     </div>
-  </div>
 
-  <div class="container">
     <div class="box first">
-      <a href="">
-        <h4>Megalodon 2</h4>
-        <img src="img/megalodon2.jpg" alt="Imagen">
+      <a href="pelicula.html?peliculaId=cars" onclick="mostrarTrailer('cars')">
+        <h4>cars</h4>
+        <img src="img/cars.jpg" alt="Imagen">
       </a>
     </div>
     <div class="box">
-      <a href="index.html">
-        <h4>El Padrino 1</h4>
-        <img src="img/el_padrino.jpg" alt="Imagen">
+      <a href="pelicula.html?peliculaId=interstellar" onclick="mostrarTrailer('interstellar')">
+        <h4>Interstellar</h4>
+        <img src="img/interstellar.jpg" alt="Imagen">
       </a>
     </div>
     <div class="box last">
-      <a href="">
-        <h4>Garra</h4>
-        <img src="img/garra.png" alt="Imagen">
+      <a href="pelicula.html?peliculaId=jumanji" onclick="mostrarTrailer('jumanji')">
+        <h4>Jumanji</h4>
+        <img src="img/jumanji.jpg" alt="Imagen">
       </a>
     </div>
-  </div>
 
-  <div class="container">
     <div class="box first">
-      <a href="">
-        <h4>Megalodon 2</h4>
-        <img src="img/megalodon2.jpg" alt="Imagen">
+      <a href="pelicula.html?peliculaId=jurassic" onclick="mostrarTrailer('jurassic')">
+        <h4>Jurassic Park The Last Kingdom</h4>
+        <img src="img/jurassic the last kingdom.jpg" alt="Imagen">
       </a>
     </div>
     <div class="box">
-      <a href="index.html">
-        <h4>El Padrino 1</h4>
-        <img src="img/el_padrino.jpg" alt="Imagen">
+      <a href="pelicula.html?peliculaId=MarioBros" onclick="mostrarTrailer('MarioBros')">
+        <h4>Mario Bros</h4>
+        <img src="img/MarioBros.jpg" alt="Imagen">
       </a>
     </div>
     <div class="box last">
-      <a href="">
-        <h4>Garra</h4>
-        <img src="img/garra.png" alt="Imagen">
+      <a href="pelicula.html?peliculaId=minioms" onclick="mostrarTrailer('minioms')">
+        <h4>Minions</h4>
+        <img src="img/minioms.jpg" alt="Imagen">
+      </a>
+    </div>
+
+    <div class="box first">
+      <a href="pelicula.html?peliculaId=osoyogui" onclick="mostrarTrailer('osoyogui')">
+        <h4>Oso Yogui</h4>
+        <img src="img/osoyogui.jpg" alt="Imagen">
+      </a>
+    </div>
+    <div class="box">
+      <a href="pelicula.html?peliculaId=pele" onclick="mostrarTrailer('pele')">
+        <h4>Pele</h4>
+        <img src="img/pele.jpg" alt="Imagen">
+      </a>
+    </div>
+    <div class="box last">
+      <a href="pelicula.html?peliculaId=up" onclick="mostrarTrailer('up')">
+        <h4>Up</h4>
+        <img src="img/up.jpg" alt="Imagen">
       </a>
     </div>
   </div>
-     
-    <script src="js/menu.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

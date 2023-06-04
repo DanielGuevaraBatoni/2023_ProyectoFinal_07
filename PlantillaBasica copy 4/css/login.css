@@ -1,160 +1,177 @@
-/*Importacion de letra titulo font awesome*/
-/*https://fonts.google.com/specimen/Oswald?preview.text=TrailerMania&preview.text_type=custom*/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+  /*Importacion de letra titulo font awesome*/
+  /*https://fonts.google.com/specimen/Oswald?preview.text=TrailerMania&preview.text_type=custom*/
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
-a {
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
+  }
 
-body {
-  margin: 0;
-  padding: 0;
-  color: #1c1c1c;
-}
+  body {
+    margin: 0;
+    padding: 0;
+    color: #1c1c1c;
+  }
 
-#video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
+  #video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 
-#video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  #video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-#header {
-  background-color: #362525;
-  width: 100%;
-  height: 70px;
-  position:fixed;
-  left: 0;
-  top:0;
-  z-index: 2;
-  /*flex*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 4%;
-}
+  #header {
+    background-color: #362525;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    /*flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4%;
+  }
 
-#title {
-  font-family: 'Oswald', sans-serif;
-  text-align: left;
-  margin: 0;
-  font-size: 42px;
-  color: #696969;
-}
+  #title {
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    margin: 0;
+    font-size: 42px;
+    color: #696969;
+  }
 
-#login-form {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  background-color: #362525;
-  color: #B5B5B5;
-}
+  #login-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background-color: #362525;
+    color: #B5B5B5;
+  }
 
-#login-form form {
-  padding: 20px;
-}
+  #login-form form {
+    padding: 20px;
+    opacity: 0.8;
+  }
 
 
-label {
-  display: block;
-  margin-bottom: 10px;
-  width: 50%; /* Ajusta el ancho de los labels */
-}
+  label {
+    display: block;
+    margin-bottom: 10px;
+    width: 50%;
+  }
 
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  border: none;
-  margin-bottom: 15px;
-  background-color: #1c1c1c;
-  color: #B5B5B5;
-  padding: 0;
-}
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #1c1c1c;
+    color: #B5B5B5;
+    padding: 0;
+  }
 
-#username {
-  padding: 5px 2px 5px 2px;
-}
+  #username {
+    padding: 5px 2px 5px 2px;
+  }
 
-#password {
-  padding: 5px 2px 5px 2px;
-}
+  #password {
+    padding: 5px 2px 5px 2px;
+  }
 
-.small {
-  font-size: 12px;
-}
+  .small {
+    font-size: 12px;
+  }
 
-#forgot-password {
-  display: inline-block;
-  text-align: center;
-  margin-top: 10px;
-  color: #B5B5B5;
-  padding-bottom: 10px;
-}
+  #forgot-password {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    color: #B5B5B5;
+    padding-bottom: 10px;
+  }
 
-#forgot-password:hover {
-  color: #694949;
-}
+  #forgot-password:hover {
+    color: #694949;
+  }
 
-.button {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #694949;
-  color: #B5B5B5;
-  text-decoration: none;
-  padding: 5px;
-  border: 1px solid #1c1c1c;
-}
+  .button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #694949;
+    color: #B5B5B5;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid #1c1c1c;
+    cursor: pointer;
+  }
 
-.button:hover {
-  background-color: #1c1c1c;
-}
+  .button:hover {
+    background-color: #1c1c1c;
+  }
 
-#button-container {
-  text-align: right;
-  margin-top: 10px;
-}
+  #button-container {
+    text-align: right;
+    margin-top: 10px;
+  }
 
-#register-button {
-  margin-right: 10px;
-}
+  #register-button {
+    margin-right: 10px;
+  }
 
-.password-input-container {
-  display: flex;
-  align-items: center;
-}
+  .password-input-container {
+    display: flex;
+    align-items: center;
+  }
 
-#show-password-button {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #694949;
-  color: #B5B5B5;
-  text-decoration: none;
-  margin-left: 10px;
-  border: 1px solid #1c1c1c;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
+  #show-password-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #694949;
+    color: #B5B5B5;
+    text-decoration: none;
+    margin-left: 10px;
+    border: 1px solid #1c1c1c;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
 
-#show-password-button:hover {
-  background-color: #1c1c1c;
-}
+  #show-password-button:hover {
+    background-color: #1c1c1c;
+  }
 
-#forgot-password-link {
-  display: inline-block;
-  color: #B5B5B5;
-  text-decoration: none;
-}
+  #forgot-password-link {
+    display: inline-block;
+    color: #B5B5B5;
+    text-decoration: none;
+  }
 
-#forgot-password-link:hover {
-  color: #694949;
-}
+  #forgot-password-link:hover {
+    color: #694949;
+  }
+
+
+  #mensaje-error {
+    display: none;
+    color: red;
+    margin-top: 10px;
+  }
+
+  #forgot-password-form {
+    display: none;
+  }
+
+  #forgot-password-form.show {
+    display: block;
+  }

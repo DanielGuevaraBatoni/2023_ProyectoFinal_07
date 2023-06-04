@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>TrailerMania</title>
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <style>
+    #header {
+      background-color: #362525;
+      width: 100%;
+      height: 70px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+
+    .header-title {
+      margin-right: auto;
+    }
+
+    .header-title a {
+      text-decoration: none;
+      color: #696969;
+    }
+
+    .header-title h1 {
+      margin: 0;
+      font-size: 42px;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-icon {
+      margin-left: 10px;
+      margin-right: 50px;
+    }
+
+    .user-icon .fa-user {
+      font-size: 18px;
+      color: #696969;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 5px;
+      margin: 0 10px;
+    }
+
+    .search-input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      border-radius: 20px;
+    }
+
+    .search-button {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    #pelicula-info {
+      margin: 20px;
+      color: #1D1D1D;
+      margin-top: 80px;
+    }
+
+    #pelicula-info h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    #pelicula-info p {
+      margin-bottom: 10px;
+    }
+
+    #trailer {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <div class="header-title">
+      <a href="menu.html">
+        <h1>TrailerMania</h1>
+      </a>
+    </div>
+    <div class="header-controls">
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar" class="search-input">
+        <button type="submit" class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="user-icon">
+        <i class="fa-solid fa-user" style="color: #696969;"></i>
+        <div class="dropdown-content">
+          <a href="login.html">Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pelicula-info">
+    <h2 id="nombre"></h2>
+    <p id="sinopsis"></p>
+    <p id="año"></p>
+    <p id="director"></p>
+    <br>
+    <iframe id="trailer" src="" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    <p id="valoracion"></p>
+  </div>
+
+  <script src="js/pelicula.js"></script>
+</body>
+
+</html>
